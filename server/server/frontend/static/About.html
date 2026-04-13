@@ -5,66 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
 
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="style.css">
-
-    <style>
-        body {
-            font-family: Arial;
-            background: #f4f4f4;
-            text-align: center;
-        }
-        .container {
-            padding: 20px;
-        }
-        .team {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .card {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            width: 250px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-    </style>
+    <!-- REQUIRED CSS LINKS -->
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
 
-<h1>About Us</h1>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">About Us</h1>
 
-<div class="container">
-    <div class="team">
+    <!-- IMPROVED DESCRIPTION -->
+    <p class="text-center">
+        Welcome to our platform! We are a dedicated team of developers committed to building
+        high-quality full-stack applications that provide seamless user experiences.
+        Our goal is to deliver reliable, scalable, and efficient solutions using modern
+        technologies. We focus on innovation, collaboration, and continuous improvement
+        to ensure that our applications meet real-world business needs and user expectations.
+    </p>
 
-        <div class="card">
-            <img src="https://randomuser.me/api/portraits/men/1.jpg">
-            <h3>Rahul Sharma</h3>
-            <p>Frontend Developer</p>
-            <p>Builds UI using React and CSS</p>
+    <div class="row mt-5">
+
+        <!-- TEAM MEMBER 1 -->
+        <div class="col-md-4 text-center">
+            <img src="https://via.placeholder.com/150" class="img-fluid rounded-circle mb-3">
+            <h4>Himanshu Trigune</h4>
+            <p><strong>Full Stack Developer</strong></p>
+            <p>Expert in building scalable web applications using modern frameworks.</p>
+            <p>Email: himanshu@example.com</p>
+        </div>
+
+        <!-- TEAM MEMBER 2 -->
+        <div class="col-md-4 text-center">
+            <img src="https://via.placeholder.com/150" class="img-fluid rounded-circle mb-3">
+            <h4>Rahul Sharma</h4>
+            <p><strong>Backend Developer</strong></p>
+            <p>Specializes in APIs, databases, and server-side logic.</p>
             <p>Email: rahul@example.com</p>
         </div>
 
-        <div class="card">
-            <img src="https://randomuser.me/api/portraits/women/2.jpg">
-            <h3>Priya Singh</h3>
-            <p>Backend Developer</p>
-            <p>Works with Django and APIs</p>
+        <!-- TEAM MEMBER 3 -->
+        <div class="col-md-4 text-center">
+            <img src="https://via.placeholder.com/150" class="img-fluid rounded-circle mb-3">
+            <h4>Priya Patel</h4>
+            <p><strong>Frontend Developer</strong></p>
+            <p>Focused on creating responsive and user-friendly interfaces.</p>
             <p>Email: priya@example.com</p>
-        </div>
-
-        <div class="card">
-            <img src="https://randomuser.me/api/portraits/men/3.jpg">
-            <h3>Amit Verma</h3>
-            <p>Full Stack Developer</p>
-            <p>Handles integration and deployment</p>
-            <p>Email: amit@example.com</p>
         </div>
 
     </div>
