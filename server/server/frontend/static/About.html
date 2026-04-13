@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contact Us</title>
+    <title>About Us</title>
 
-    <!-- REQUIRED CSS LINKS -->
+    <!-- REQUIRED CSS -->
     <link rel="stylesheet" href="/static/bootstrap.min.css">
     <link rel="stylesheet" href="/static/style.css">
 
@@ -17,9 +17,7 @@
         }
         .navbar a {
             float: left;
-            display: block;
             color: white;
-            text-align: center;
             padding: 14px 20px;
             text-decoration: none;
         }
@@ -29,49 +27,76 @@
         }
         .active {
             background-color: #04AA6D;
-            color: white;
         }
         .container {
             padding: 20px;
         }
-        .contact-img {
-            width: 300px;
+        .team-member {
+            text-align: center;
             margin-top: 20px;
+        }
+        .team-member img {
+            width: 150px;
+            border-radius: 50%;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- NAVIGATION BAR -->
-    <div class="navbar">
-        <a href="Home.html">Home</a>
-        <a href="About.html">About Us</a>
-        <a class="active" href="Contact.html">Contact Us</a>
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="Home.html">Home</a>
+    <a class="active" href="About.html">About Us</a>
+    <a href="Contact.html">Contact Us</a>
+</div>
+
+<div class="container">
+
+    <h1>About Us</h1>
+
+    <!-- PROPER DESCRIPTION -->
+    <p>
+        We are a passionate team of developers dedicated to building modern, scalable,
+        and user-friendly web applications. Our platform focuses on providing a seamless
+        experience for users to explore car models, dealers, and pricing information.
+        We aim to deliver reliable solutions using the latest technologies in full-stack development.
+    </p>
+
+    <h2>Our Team</h2>
+
+    <div class="row">
+
+        <!-- MEMBER 1 -->
+        <div class="col-md-4 team-member">
+            <img src="https://via.placeholder.com/150">
+            <h4>Himanshu Trigune</h4>
+            <p><strong>Full Stack Developer</strong></p>
+            <p>Expert in building end-to-end web applications using modern frameworks.</p>
+            <p>Email: himanshu@example.com</p>
+        </div>
+
+        <!-- MEMBER 2 -->
+        <div class="col-md-4 team-member">
+            <img src="https://via.placeholder.com/150">
+            <h4>Rahul Sharma</h4>
+            <p><strong>Backend Developer</strong></p>
+            <p>Specializes in APIs, database design, and server-side logic.</p>
+            <p>Email: rahul@example.com</p>
+        </div>
+
+        <!-- MEMBER 3 -->
+        <div class="col-md-4 team-member">
+            <img src="https://via.placeholder.com/150">
+            <h4>Priya Patel</h4>
+            <p><strong>Frontend Developer</strong></p>
+            <p>Focused on UI/UX design and responsive web interfaces.</p>
+            <p>Email: priya@example.com</p>
+        </div>
+
     </div>
 
-    <div class="container">
-
-        <!-- REQUIRED IMAGE -->
-        <img src="/static/cars.jpeg" alt="Cars Image" width="100%">
-
-        <h1>Contact Us</h1>
-
-        <!-- SECOND REQUIRED IMAGE -->
-        <img src="/static/contactus.png" alt="Contact Us" class="contact-img">
-
-        <p>
-            We are here to help you find the best car deals and provide excellent customer service.
-            Feel free to reach out to us for any inquiries, support, or feedback.
-        </p>
-
-        <h3>Contact Details</h3>
-
-        <p><strong>Email:</strong> support@cardealer.com</p>
-        <p><strong>Phone:</strong> +1 123-456-7890</p>
-        <p><strong>Address:</strong> 123 Main Street, New York, USA</p>
-
-    </div>
+</div>
 
 </body>
 </html>
